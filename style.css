@@ -750,6 +750,7 @@ footer {
       cursor: grab;
       scroll-behavior: smooth;
       object-fit: cover;
+      justify-content: flex-start;
    }
    .small-img.dragging {
       cursor: grabbing;
