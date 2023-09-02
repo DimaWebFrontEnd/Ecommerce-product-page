@@ -28,7 +28,7 @@ const showHideIcons = () => {
 
 arrowIcons.forEach(icon => {
    icon.addEventListener('click', () => {
-      firstImgWidth = firstImg.clientWidth + 5;
+      firstImgWidth = firstImg.clientWidth + 10;
       carousel.scrollLeft += icon.id === 'left' ? -firstImgWidth : firstImgWidth;
       setTimeout(() => showHideIcons(), 60);
    })
@@ -38,7 +38,7 @@ const autoSlide = () => {
    if (carousel.scrollLeft == (carousel.scrollWidth - carousel.clientWidth)) return;
 
    positionDiff = Math.abs(positionDiff);
-   let firstImgWidth = firstImg.clientWidth + 5;
+   let firstImgWidth = firstImg.clientWidth + 10;
    let valDiffrence = firstImgWidth - positionDiff;
 
    if (carousel.scrollLeft > prevScrollLeft) {
