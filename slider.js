@@ -3,7 +3,8 @@ const modalActiveImg = document.querySelectorAll('[data-smallImg-modal]')
 const carousel = document.querySelector('.carousel')
 
 const modalImg = document.querySelector('.img-container-modal');
-const firstImg = carousel.querySelectorAll('img')[0];
+//const firstImg = carousel.querySelectorAll('img')[0];
+const firstDiv = carousel.querySelectorAll('.bg-for-small-img)[0];
 const arrowIcons = document.querySelectorAll('.next-prev-icons img');
 const modalArrowIcons = document.querySelectorAll('.modal-next-prev-icons img');
 
@@ -28,11 +29,19 @@ const showHideIcons = () => {
 
 arrowIcons.forEach(icon => {
    icon.addEventListener('click', () => {
+      firstDivWidth = firstDiv.clientWidth + 5;
+      carousel.scrollLeft += icon.id === 'left' ? -firstDivWidth : firstDivWidth;
+      setTimeout(() => showHideIcons(), 60);
+   })
+})
+
+/* arrowIcons.forEach(icon => {
+   icon.addEventListener('click', () => {
       firstImgWidth = firstImg.clientWidth + 5;
       carousel.scrollLeft += icon.id === 'left' ? -firstImgWidth : firstImgWidth;
       setTimeout(() => showHideIcons(), 60);
    })
-})
+}) */
 
 const autoSlide = () => {
    if (carousel.scrollLeft == (carousel.scrollWidth - carousel.clientWidth)) return;
