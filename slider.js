@@ -4,7 +4,7 @@ const carousel = document.querySelector('.carousel')
 
 const modalImg = document.querySelector('.img-container-modal');
 //const firstImg = carousel.querySelectorAll('img')[0];
-const firstDiv = carousel.querySelectorAll('.bg-for-small-img)[0];
+const firstDiv = document.querySelectorAll('.bg-for-small-img)[0];
 const arrowIcons = document.querySelectorAll('.next-prev-icons img');
 const modalArrowIcons = document.querySelectorAll('.modal-next-prev-icons img');
 
