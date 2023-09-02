@@ -1,2 +1,2 @@
 # Ecommerce-product-page
-My first project with JavaScript from frontendmentor.io
+I completed my first project using JavaScript from frontendmentor.io.
