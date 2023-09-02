@@ -750,6 +750,7 @@ footer {
       cursor: grab;
       scroll-behavior: smooth;
       object-fit: cover;
+      column-gap: 0;  /* Here are changes*/
    }
    .small-img.dragging {
       cursor: grabbing;
@@ -764,6 +765,7 @@ footer {
    .bg-for-small-img {
       min-width: 100%;
       height: auto;
+      margin: 0 5px;  /* Here are changes*/
    }
    .bg-for-small-img.active-plus {
       outline: none; 
