@@ -43,7 +43,7 @@ arrowIcons.forEach(icon => {
    })
 }) */
 
-const autoSlide = () => {
+/*const autoSlide = () => {
    if (carousel.scrollLeft == (carousel.scrollWidth - carousel.clientWidth)) return;
 
    positionDiff = Math.abs(positionDiff);
@@ -55,7 +55,7 @@ const autoSlide = () => {
    }
 
    carousel.scrollLeft -= positionDiff > firstImgWidth / 3 ? valDiffrence : -positionDiff;
-}
+}*/
 
 const dragStart = (e) => {
    isDragStart = true;
