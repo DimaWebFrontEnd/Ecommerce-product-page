@@ -736,7 +736,8 @@ footer {
       display: none;
    }
    .small-img img {
-      width: 100%;
+      /* width: 100%; */
+      min-width: 300px;
       height: auto;
       object-fit: cover;
       border-radius: 0;
