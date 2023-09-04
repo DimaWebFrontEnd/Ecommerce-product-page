@@ -21,8 +21,6 @@ let positionDiff;
 
 const showHideIcons = () => {
    let scrollWidth = carousel.scrollWidth - carousel.clientWidth;
-  // arrowIcons[0].style.opacity = carousel.scrollLeft === scrollWidth ? '0' : '1';
- //  arrowIcons[1].style.opacity = carousel.scrollLeft === 0 ? '0' : '1';
      arrowIcons[0].style.display = carousel.scrollLeft === scrollWidth ? 'none' : 'block';
      arrowIcons[1].style.display = carousel.scrollLeft === 0 ? 'none' : 'block';
 
@@ -91,14 +89,8 @@ carousel.addEventListener('touchend', dragStop);
 
 activeImg.forEach(elem => {
    elem.addEventListener('click', () => {
-      //let activeOrangeIcon = document.querySelector(".bg-for-small-img");
       document.querySelector("img.active").classList.remove("active");
-      //activeOrangeIcon.classList.remove("active-plus");
       elem.classList.add('active');
-
-      //document.querySelector(".bg-for-small-img").classList.remove("active-plus");
-      //activeOrangeIcon.classList.remove("active-plus");
-      
    })
 })
 
@@ -110,7 +102,6 @@ activeOrangeIcon.forEach(orangeIcon => {
 })
 
 const toLargeSize = (smallImg) => {
-   //let modalFullImg = document.getElementById('modal-imageBox');
    fullImg.src = smallImg.src;
 }
 
@@ -128,11 +119,6 @@ const openModalImg = () => {
       if (modalImg.style.display === 'block') {
          body.style.overflow = 'hidden';
       } 
-     /*  if (modalImg.style.display === 'none') {
-         body.style.overflow = 'auto';
-      } */
-   //body.style.overflow = 'hidden';
-  // modalImg.style.display = 'block';
 }
 
 const closeModal = () => {
@@ -159,7 +145,6 @@ function currentSlide(n) {
 function showSlides(n) {
    let i;
    let slides = document.querySelectorAll("[data-fullImg-modal]");
-   /* let dots = document.querySelectorAll("[data-smallImg-modal]"); */
    let imgModActive = document.querySelectorAll("[data-smallImg-modal]");
    let dots = document.querySelectorAll(".bg-for-modal-small-img");
    
