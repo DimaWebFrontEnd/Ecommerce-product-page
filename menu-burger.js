@@ -21,3 +21,14 @@ closeMenuBurger.addEventListener('click', () => {
    setTimeout(() => navMenu.classList.remove('nav-on'), 350);
    setTimeout(() => navUl.classList.remove('hide-menu'), 350);
 })
+
+window.onclick = function(event) {
+   if (event.target === navMenu) {
+      navUl.classList.remove('show');
+      navUl.classList.add('hide-menu');
+      body.style.overflow = 'auto';
+      //setTimeout(() => navMenu.style.display = 'none', 350);
+      setTimeout(() => navMenu.classList.remove('nav-on'), 350);
+      setTimeout(() => navUl.classList.remove('hide-menu'), 350);
+   }
+ }
